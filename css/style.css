@@ -1,0 +1,148 @@
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: black;
+    letter-spacing: 1px;
+    text-align: center;
+}
+header {
+    display: grid;
+    height: 6%;
+  align-items: center;
+  
+}
+ 
+
+.mobile-toggle { 
+    display: flex;
+    justify-content: space-between;
+     flex-direction: row;
+}     
+
+li {
+    list-style-type: none;
+}
+.smoothScroll {
+    color: black;
+}
+
+/* main-part */
+.main-part {
+    display: grid;
+    padding: 6%;
+    background: linear-gradient(45deg, #e55d87 0, #5fc3e4 100%);
+    color: white;
+    font-size: 40px;
+
+ /*  justify-items: center;
+  align-content: center;
+  justify-content: center; */
+  
+  
+}
+
+
+.heading1 {
+   margin-top: 30px;
+   font-size: 100px;    
+  }
+  .heading {
+    font-size: 30px;
+    margin-top: 18px;
+}
+.fa-heart-o {
+      font-size: 110px;
+}
+
+.clickme { 
+    background: linear-gradient(45deg, #e55d87 0, #5fc3e4 100%);
+    border: none;
+    padding: 20px 40px;
+    margin-top: 3rem;
+    color: white;
+} 
+
+.scroll-down {
+    color: #e55d87;
+    font-size: 80px;
+   
+   
+}
+.introduction {
+    display: grid;
+    padding: 1%;
+   justify-content: center;
+
+}
+.services {
+    background-color: #e9f1f1;  
+    color: #113c57;
+}
+
+.underLine {
+    color: #e55d87;
+    font-size: 60px;
+    margin-right: 2px;
+}
+.text {
+    font-size: 30px;
+}
+.textBlock {
+    display: grid;
+    padding: 8%;
+    letter-spacing: 1px;
+    line-height: 3;
+}
+.empty-space,
+.square {
+    display: grid;
+    padding: 5%;
+   justify-content: center;
+  
+   
+}
+.box {
+  
+    backface-visibility: hidden;
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+}
+
+.title {
+    font-size: 90px;
+   color: rgb(44, 36, 38);
+}
+.work {
+    display: grid;
+     background: rgb(245, 237, 239);
+    padding: 13%;  
+}
+.threeColumns {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile-toggle {
+        display: none;
+    }
+ .heading1 {
+     font-size: 30px;
+ }  
+ .heading, .rightLine {
+     font-size: 23px;
+     margin-left: 10px;
+ } 
+
+}
