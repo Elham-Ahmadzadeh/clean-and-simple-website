@@ -1,3 +1,3 @@
 # clean-and-simple-website
-portfolio sample based on grid and fex boxes
+portfolio sample based on grid and fex boxes.
 This website has not completed yet...
