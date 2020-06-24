@@ -51,14 +51,13 @@ li {
 }
 
 .letterFlip {
-
   animation: letterflip 7s infinite; 
 }
 .heading1 {
-font-size: 65px;
+font-size: 50px;
 }
   .heading {
-    font-size: 20px;
+    font-size: 35px;
     margin-top: 18px;
 }
 .fa-heart-o {
