@@ -18,7 +18,7 @@ body {
 header {
     display: grid;
     height: 6%;
-  align-items: center;
+    align-items: center;
   
 }
  
@@ -26,7 +26,7 @@ header {
 .mobile-toggle { 
     display: flex;
     justify-content: space-between;
-     flex-direction: row;
+    flex-direction: row;
 }     
 
 li {
@@ -48,14 +48,18 @@ li {
   align-content: center;
   justify-content: center; */
   
-  
 }
 
+.letterFlip {
+    color: #f19bb6;
+  display: inline-block; 
+  -webkit-animation: letterflip 6s infinite;
+  animation: letterflip 6s infinite; 
 
-.heading1 {
-   margin-top: 30px;
-   font-size: 100px;    
-  }
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
   .heading {
     font-size: 30px;
     margin-top: 18px;
@@ -131,15 +135,58 @@ li {
     justify-content: space-between;
 }
 
+/* key frames and animations  */
+@-webkit-keyframes letterflip {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    70% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    80% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        color: white;
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+
+}
+
+@keyframes letterflip {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    70% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    80% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        color: white;
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
 @media only screen and (max-width: 600px) {
     
     .mobile-toggle {
         display: none;
     }
- .heading1 {
-     font-size: 30px;
+
+ .heading {
+     font-size: 20px;
  }  
- .heading, .rightLine,
+ .rightLine,
  .title {
      font-size: 40px;  
  }
