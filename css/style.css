@@ -51,7 +51,7 @@ li {
 }
 
 .letterFlip {
-  animation: letterflip 7s infinite; 
+  animation: letterflip 3s infinite; 
 }
 .heading1 {
 font-size: 50px;
@@ -129,6 +129,63 @@ font-size: 50px;
     display: flex;
     justify-content: space-between;
 }
+.percentage {
+  display: grid;
+  padding: 10%; 
+  background: #333; 
+}
+.columns {
+    display: grid;
+    padding: 7%;
+    text-align: center;
+  
+    
+}
+
+.progressBar1,
+.progressBar2,
+.progressBar3,
+.progressBar4 {
+    height: 1.5em; /* it scales with the size of the font inside the bar  */
+    background-color: white;
+    border-radius: 0.25em; /* we put it half of the height */
+    color: rgb(247, 241, 241);
+    position: relative;
+    animation: move 6s  infinite;
+
+}
+.progressBar1::before,
+.progressBar2::before,
+.progressBar3:before,
+.progressBar4::before {
+    content: attr(data-label); /* you will see the text has been added */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: .1em;
+    top: .20em;
+    bottom: .5em;
+    max-width: calc(100% - 1rem);
+   z-index: 1;
+    background-image: linear-gradient(45deg, #e55d87 0, #5fc3e4 100%);
+    border-radius: 0.15em;
+     padding: 0.6em;
+     
+
+}
+.progressBar1::before {
+    width: 70%;
+}
+.progressBar2::before {
+    width: 86%;
+}
+.progressBar3:before {
+    width: 69%;
+}
+.progressBar4::before {
+    width: 90%;
+}
 
 /* key frames and animations  */
 
@@ -186,6 +243,14 @@ font-size: 50px;
     }
 
 }
+
+@keyframes move {
+    80% {
+        color: rgb(9, 33, 247);
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
     
     .mobile-toggle {
