@@ -85,10 +85,12 @@ font-size: 50px;
     display: grid;
     padding: 1%;
    justify-content: center;
-   background-image: url('https://www.flickr.com/photos/sharedobsession/6793032916/in/photolist-bmh52b-2gTiZmM-FCYe6K-2hJfQqo-3Kh7aQ-PjpgmA-9jbkXF-R3TNZc-7RTwuZ-MR195q-6kZie8-6d2B8g-8iZ2rS-z4HuA6-xahByh-4AULAd-Chw9ha-9hJ6G8-qHUkWt-73cgeR-qDkEQG-boUfuE-by4SGR-bySZsr-UBmCU1-dho3Hg-9oith5-fzoFVg-4EahFy-ajMHPA-apMUXX-4Z8w7T-6yFsBS-2j2EiGq-de8GCj-gDYA6f-9Ljfay-STuFrE-7wRceD-gMrUuT-L2LNRS-eeX42-qQkqbM-2i6ZzBX-qvwYQ2-evLWtQ-9UGAiT-94VB4f-4jCShz-yc6qzL');
-   background-repeat: repeat;
-   background-size: cover;
+  
 
+}
+.about {
+    background-image: url('https://images.unsplash.com/photo-1495366554757-8568e69d7f80?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80');
+    background-size: cover;
 }
 .services {
     background-color: #e9f1f1;  
