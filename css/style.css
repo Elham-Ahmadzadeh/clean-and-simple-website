@@ -64,7 +64,6 @@ font-size: 50px;
     font-size: 110px;  
 }
 .fa-heart-o {
-    font-size: 110px;
     text-shadow: 2px 2px rgb(253, 246, 246);
     animation: heartbeat 15s infinite;
     transform-style: preserve-3d;
@@ -78,11 +77,11 @@ font-size: 50px;
     color: white;
 } 
 
-.scroll-down {
+
+.fa-angle-double-down {
     color: #e55d87;
-    font-size: 80px;
-   
-   
+    font-size: 80px; 
+    animation: scroll-down 1s infinite; 
 }
 .introduction {
     display: grid;
@@ -95,8 +94,8 @@ font-size: 50px;
     background-size: cover;
 }
 .services {
-    background-color: #298880;  
-    color: #032715;
+    background-color: #3bab87;;  
+    color: white;
  
 }
 
@@ -119,7 +118,7 @@ font-size: 50px;
 .box {
     width: 80px;
     height: 80px;
-    background-color: rgb(134, 15, 15);
+    background-color: rgb(17, 240, 140);
     animation: animateBox 3s linear infinite; 
 }
 
@@ -129,7 +128,7 @@ font-size: 50px;
 }
 .work {
     display: grid;
-     background: rgb(240, 212, 219);
+     background: rgb(240, 198, 220);
     padding: 13%;  
 }
 .threeColumns {
@@ -251,7 +250,6 @@ font-size: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    color: white;
     margin-left: 15px;
     margin-top: 10px;
 }
@@ -261,14 +259,17 @@ font-size: 50px;
 .fa-linkedin {
     background: #007bb5;
     font-size: 30px;
+    color: white;
 }
 .fa-github { 
     background: rgb(26, 23, 23);
     font-size: 30px;
+    color: white;
 }
 .fa-yahoo {
     background: #430297;
     font-size: 30px;
+    color: white;
 }
 .last-part {
     font-size: 11px;
@@ -308,6 +309,11 @@ font-size: 50px;
       
    }
    
+}
+@keyframes scroll-down {
+    25% { margin-top: 30px;}
+    50% { margin-bottom: 30px;}
+    75% { margin-top: 30px;}
 }
 @keyframes animateBox {
     0% {
