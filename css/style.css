@@ -76,12 +76,18 @@ font-size: 50px;
     margin-top: 3rem;
     color: white;
 } 
-
+.scroll-down {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .fa-angle-double-down {
+    position: absolute;
     color: #e55d87;
     font-size: 80px; 
-    animation: scroll-down 1s infinite; 
+    animation: scroll-down 1.5s infinite; 
 }
 .introduction {
     display: grid;
@@ -218,11 +224,11 @@ font-size: 50px;
     animation: fishMoves 24s infinite;
 }
 #fish1 {
-    top: 260px;
+    top: 440px;
    
 }
 #fish2 {
-    top: 260px;
+    top: 290px;
     animation-delay: 12s;
 }
 #fish3 {
@@ -311,9 +317,9 @@ font-size: 50px;
    
 }
 @keyframes scroll-down {
-    25% { margin-top: 30px;}
-    50% { margin-bottom: 30px;}
-    75% { margin-top: 30px;}
+    25% { top: 0px;}
+    50% { bottom: 40px;}
+    75% { top: 0px;} 
 }
 @keyframes animateBox {
     0% {
@@ -379,6 +385,9 @@ font-size: 50px;
 .work {
    
     padding: 8%;
+}
+.scroll-down {
+    display: none;
 }
 .images {
     margin-bottom: 0.5rem;
